@@ -1,0 +1,9 @@
+{
+  "result": " INCORRECT_END_BALANCE",
+  "errorRecords": [
+    {
+      "reference": "reference_of_error_record",
+      "accountNumber": "account_number_of_error_record"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+
+Test Case: INTERNAL_SERVER_ERROR  -- Example: Removed transactionRef attriute from request
+----------------------------------------------------
+Request Payload -->
+
+[
+    {
+       "transactionRef" : 12,
+       "accountNumber" : 3,
+       "startBalance" : "7",
+       "mutation" : "7",
+       "endBalance" : 7
+     },
+        {
+       "transactionRef" : 18,
+       "accountNumber" : 6,
+       "startBalance" : "40",
+       "mutation" : "10",
+       "endBalance" : 100
+     }
+]
+
+
+   
+  
+     
+Response -->
+
+{
+    "result": "INTERNAL_SERVER_ERROR",
+    "errorRecords": []
+}

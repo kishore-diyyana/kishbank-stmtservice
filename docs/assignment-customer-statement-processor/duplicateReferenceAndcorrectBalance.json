@@ -1,0 +1,8 @@
+{
+  "result" : "DUPLICATE_REFERENCE",
+  "errorRecords" : [{
+    "reference" : "reference_of_error_record",
+    "accountNumber" : "account_number_of_error_record"
+  }
+  ]
+}

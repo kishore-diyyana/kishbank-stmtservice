@@ -1,0 +1,15 @@
+Test Case: When invalid input parameter provided in JSON request payload
+----------------------------------------------------
+Request Payload -->
+
+[{}] 
+
+
+  Response --> 
+  
+	Please provide valid Account Number
+	Please provide valid End Balance in Euros
+	Please provide valid Start Balance in Euros
+	Please provide valid Mutation +/- (Deposit/Withdraw Amount) in Euros
+	Please provide valid Transaction Reference
+   

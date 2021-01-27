@@ -1,0 +1,63 @@
+
+Test Case: DUPLICATE_REFERENCE_INCORRECT_END_BALANCE
+----------------------------------------------------
+Request Payload -->
+
+ [
+     {
+       "transactionRef" : 11,
+       "accountNumber" : 1,
+       "startBalance" : "10",
+       "mutation" : "5",
+       "endBalance" : 15   
+     },
+      {
+       "transactionRef" : 12,
+       "accountNumber" : 2,
+       "startBalance" : "10",
+       "mutation" : "5",
+       "endBalance" : 5
+     },
+      {
+       "transactionRef" : 12,
+       "accountNumber" : 3,
+       "startBalance" : "7",
+       "mutation" : "7",
+       "endBalance" : 7
+     },
+        {
+       "transactionRef" : 18,
+       "accountNumber" : 6,
+       "startBalance" : "40",
+       "mutation" : "10",
+       "endBalance" : 100
+     }
+ ]  
+
+Response -->
+
+{
+    "result": "DUPLICATE_REFERENCE_INCORRECT_END_BALANCE",
+    "errorRecords": [
+        {
+            "reference": 12,
+            "accountNumber": "2",
+            "errType": "DUPLICATE_REFERENCE"
+        },
+        {
+            "reference": 12,
+            "accountNumber": "3",
+            "errType": "DUPLICATE_REFERENCE"
+        },
+        {
+            "reference": 12,
+            "accountNumber": "3",
+            "errType": "INCORRECT_END_BALANCE"
+        },
+        {
+            "reference": 18,
+            "accountNumber": "6",
+            "errType": "INCORRECT_END_BALANCE"
+        }
+    ]
+}

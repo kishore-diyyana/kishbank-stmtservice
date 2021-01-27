@@ -1,0 +1,11 @@
+package com.kishbank.stmtservice.constants;
+
+public enum StmtConstant {
+    DUPLICATE_REFERENCE("DUPLICATE_REFERENCE"),
+    INCORRECT_END_BALANCE("INCORRECT_END_BALANCE"),
+    DUPLICATE_REFERENCE_INCORRECT_END_BALANCE("DUPLICATE_REFERENCE_INCORRECT_END_BALANCE"),
+    SUCCESSFUL("SUCCESSFUL");
+
+    private StmtConstant(String constant) { }
+
+}

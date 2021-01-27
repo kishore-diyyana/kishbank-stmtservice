@@ -1,0 +1,64 @@
+Test Case: When Maximum allowed recored count provided in request payload
+PS: Please see application.properties -- app.inputfeedSize = 2
+----------------------------------------------------
+Request Payload -->
+
+[
+     {
+        "transactionRef" : 11,
+       "accountNumber" : 1,
+       "startBalance" : "10",
+       "mutation" : "5",
+       "endBalance" : 15   
+     },
+     {
+        "transactionRef" : 11,
+       "accountNumber" : 1,
+       "startBalance" : "10",
+       "mutation" : "5",
+       "endBalance" : 15   
+     },
+     {
+        "transactionRef" : 11,
+       "accountNumber" : 1,
+       "startBalance" : "10",
+       "mutation" : "5",
+       "endBalance" : 15   
+     },
+     {
+        "transactionRef" : 11,
+       "accountNumber" : 1,
+       "startBalance" : "10",
+       "mutation" : "5",
+       "endBalance" : 15   
+     },
+     {
+        "transactionRef" : 11,
+       "accountNumber" : 1,
+       "startBalance" : "10",
+       "mutation" : "5",
+       "endBalance" : 15   
+     },
+     {
+        "transactionRef" : 11,
+       "accountNumber" : 1,
+       "startBalance" : "10",
+       "mutation" : "5",
+       "endBalance" : 15   
+     },
+     {
+        "transactionRef" : 11,
+       "accountNumber" : 1,
+       "startBalance" : "10",
+       "mutation" : "5",
+       "endBalance" : 15   
+     }
+   ] 
+   
+   
+  Response -->  The input Statement list cannot contain more than specified size in app
+  
+  
+  
+   
+   

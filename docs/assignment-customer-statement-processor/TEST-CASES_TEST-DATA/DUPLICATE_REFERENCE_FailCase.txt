@@ -1,0 +1,47 @@
+
+Test Case: DUPLICATE_REFERENCE
+----------------------------------------------------
+Request Payload -->
+
+
+[
+    {
+       "transactionRef" : 12,
+       "accountNumber" : 2,
+       "startBalance" : "10",
+       "mutation" : "5",
+       "endBalance" : 5
+     },
+      {
+       "transactionRef" : 12,
+       "accountNumber" : 3,
+       "startBalance" : "17",
+       "mutation" : "7",
+       "endBalance" : 10
+     },
+     {
+       "transactionRef" : 12,
+       "accountNumber" : 3,
+       "startBalance" : "17",
+       "mutation" : "7",
+       "endBalance" : 24
+     }
+]
+   
+   
+Response -->
+
+
+{
+    "result": "DUPLICATE_REFERENCE",
+    "errorRecords": [
+        {
+            "reference": 12,
+            "accountNumber": "2"
+        },
+        {
+            "reference": 12,
+            "accountNumber": "3"
+        }
+    ]
+}
