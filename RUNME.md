@@ -9,11 +9,10 @@ $ mvn clean spring-boot:run
 
 
 ## Test Endpoints (Local)
-Get - http://localhost:9000/api/statement-service/status
+Get - http://localhost:8080/api/statement-service/status
 
-Get - http://localhost:9000/api/statement-service/statement (mock data)
+Get - http://localhost:9000/api/statement-service/validate
 
-Post - http://localhost:9000/api/statement-service/process
 
 	Sample Request Body: 
 		
@@ -40,8 +39,8 @@ Post - http://localhost:9000/api/statement-service/process
      }]
 
 ## Unit and Integration Test 
-- AmountValidationUnitTest
-- DuplicateTransRefUnitTest
-- StmtControlIntegrationTests
-- StmtServiceUnitTests
+- StmtBuilderUnitTest
+- StmtFilterValidationUnitTest
+- StmtValidatorTest
+- StmtIntegrationTests (StmtController)
 
